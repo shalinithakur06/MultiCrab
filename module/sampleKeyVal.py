@@ -40,18 +40,18 @@ def getDataKey(data, n):
         return key
     '''
 def getLFNDirBaseMC(lable, mc, m, dirT2 = "ntuple_MuMC"):
-    outLFNDirBase = '/store/user/rverma/'+ dirT2+ '/'+ lable+ '/'+getMCKey(mc, m)+"_"+ lable
+    outLFNDirBase = '/store/user/sthakur/'+ dirT2+ '/'+ lable+ '/'+getMCKey(mc, m)+"_"+ lable
     return outLFNDirBase
 
 def getLFNDirBaseData(lable, data, m, dirT2='ntuple_MuData'):
-    outLFNDirBase = '/store/user/rverma/'+dirT2+ '/'+ lable+ '/'+getDataKey(data, m)+"_"+ lable
+    outLFNDirBase = '/store/user/sthakur/'+dirT2+ '/'+ lable+ '/'+getDataKey(data, m)+"_"+ lable
     return outLFNDirBase
 
 #PATHS OF NTUPLE AT T2_IN_TIFR
 #https://twiki.cern.ch/twiki/bin/view/CMSPublic/Crab3DataHandling
 def getNtupleT2Paths(lable, samp, n, dirT2='ntuple_MuData'):
     '''
-    /cms/store/user/rverma/
+    /cms/store/user/sthakur/
     ntuple/CrabMuonsMC/QCD_ntuple_2017-03-15_MuonsMC/
     QCD_Pt-120to170_EMEnriched_TuneCUETP8M1_13TeV_pythia8/
     crab_QCD_ntuple_2017-03-15_MuonsMC/170315_214120/
@@ -59,7 +59,7 @@ def getNtupleT2Paths(lable, samp, n, dirT2='ntuple_MuData'):
     '''
     crab_dir = lable
     crab_subdir = getMCKey(samp, n) +"_"+lable
-    t2user_dir = '/store/user/rverma/'+dirT2+'/'
+    t2user_dir = '/store/user/sthakur/'+dirT2+'/'
     t2crab_dir = crab_dir+'/'+crab_subdir
     t2samp_name = "/"+getMCVal(samp, n).split("/")[1]
     t2samp_subdir = "/"+crab_subdir

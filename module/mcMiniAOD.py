@@ -9,15 +9,7 @@ yext1_v2 = run +"_ext1-v2"
 M = "/MINIAODSIM"
 
 mcSampDict_ ={
-        "TTJetsM": "/TTJets_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/"+year+M,
         "TTJetsP": "/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8/"+year+M,
-        "TTJetsP_up": "/TT_TuneCUETP8M2T4up_13TeV-powheg-pythia8/"+year+M,
-        "TTJetsP_down": "/TT_TuneCUETP8M2T4down_13TeV-powheg-pythia8/"+year+M,
-        "TTJetsP_hdampUP": "/TT_hdampUP_TuneCUETP8M2T4_13TeV-powheg-pythia8/"+year+M,
-        "TTJetsP_hdampDOWN": "/TT_hdampDOWN_TuneCUETP8M2T4_13TeV-powheg-pythia8/"+year+M,
-        "ST_tW": "/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1/"+yext1_v1+M,
-        "ST_t": "/ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1/"+year+M,
-        "ST_s": "/ST_s-channel_4f_InclusiveDecays_13TeV-amcatnlo-pythia8/"+year+M,
         "WJetsToLNu": "/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/"+year+M,
         "W1JetsToLNu": "/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/"+year+M,
         "W2JetsToLNu": "/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/"+year+M,
@@ -36,27 +28,13 @@ mcSampDict_ ={
         "QCD_Pt-120to170_Mu": "/QCD_Pt-120to170_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
         "QCD_Pt-170to300_Mu": "/QCD_Pt-170to300_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
         "QCD_Pt-300to470_Mu": "/QCD_Pt-300to470_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
+        "QCD_Pt-470to600_Mu": "/QCD_Pt-470to600_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
+        "QCD_Pt-600to800_Mu": "/QCD_Pt-600to800_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
+        "QCD_Pt-800to1000_Mu": "/QCD_Pt-800to1000_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
+        "QCD_Pt-1000toInf_Mu": "/QCD_Pt-1000toInf_MuEnrichedPt5_TuneCUETP8M1_13TeV_pythia8/"+year+M,
         "WW": "/WW_TuneCUETP8M1_13TeV-pythia8/"+year+M,
         "WZ": "/WZ_TuneCUETP8M1_13TeV-pythia8/"+year+M,
-        "ZZ": "/ZZ_TuneCUETP8M1_13TeV-pythia8/"+year+M,
-        "HplusM80": "/ChargedHiggsToCS_M080_13TeV-madgraph/"+year+M,
-        "HplusM90": "/ChargedHiggsToCS_M090_13TeV-madgraph/"+year+M,
-        "HplusM100": "/ChargedHiggsToCS_M100_13TeV-madgraph/"+year+M,
-        "HplusM120": "/ChargedHiggsToCS_M120_13TeV-madgraph/"+year+M,
-        "HplusM140": "/ChargedHiggsToCS_M140_13TeV-madgraph/"+year+M,
-        "HplusM150": "/ChargedHiggsToCS_M150_13TeV-madgraph/"+year+M,
-        "HplusM155": "/ChargedHiggsToCS_M155_13TeV-madgraph/"+year+M,
-        "HplusM160": "/ChargedHiggsToCS_M160_13TeV-madgraph/"+year+M
+        "ZZ": "/ZZ_TuneCUETP8M1_13TeV-pythia8/"+year+M
         }
 mcSampDict= OrderedDict(sorted(mcSampDict_.items(), key=lambda t: t[0]))
 
-#Other ttbar samples
-'''
-mcSampDict_ ={
-        "TTJetsP_isrup": "/TT_TuneCUETP8M2T4_13TeV-powheg-isrup-pythia8/"+yext1_v1+M,
-        "TTJetsP_fsrup": "/TT_TuneCUETP8M2T4_13TeV-powheg-fsrup-pythia8/"+year+M,
-        "TTJetsP_isrdown": "/TT_TuneCUETP8M2T4_13TeV-powheg-isrdown-pythia8/"+year+M,
-        "TTJetsP_fsrdown": "/TT_TuneCUETP8M2T4_13TeV-powheg-fsrdown-pythia8/"+year+M,
-        }
-mcSampDict= OrderedDict(sorted(mcSampDict_.items(), key=lambda t: t[0]))
-'''

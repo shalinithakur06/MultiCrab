@@ -36,7 +36,7 @@ range_EleMC = len(mc)
 range_eleData = len(eleData)
 
 def statusMuMC(mc, m):
-    crab_dir = "CrabMuMC_20171130"
+    crab_dir = "CrabMuMC_20171218"
     crab_subdir = "crab_"+getMCKey(mc, m)+"_MuMC_"+crab_dir.split("_")[1]
     execme("echo  ")
     execme("echo +++++++++++++++++++++++++++++++++++++++++++++++")
