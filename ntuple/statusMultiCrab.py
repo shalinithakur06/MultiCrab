@@ -25,7 +25,7 @@ def execme(cmd):
 #USERS INPUTS
 isMu = True
 isMuMC = True
-isMuData = False
+isMuData = True
 range_MuMC = len(mc)
 range_muData = len(muData)
 
@@ -36,7 +36,7 @@ range_EleMC = len(mc)
 range_eleData = len(eleData)
 
 def statusMuMC(mc, m):
-    crab_dir = "CrabMuMC_20171218"
+    crab_dir = "CrabMuMC_20171223"
     crab_subdir = "crab_"+getMCKey(mc, m)+"_MuMC_"+crab_dir.split("_")[1]
     execme("echo  ")
     execme("echo +++++++++++++++++++++++++++++++++++++++++++++++")
@@ -44,11 +44,11 @@ def statusMuMC(mc, m):
     execme("echo +++++++++++++++++++++++++++++++++++++++++++++++")
     #execme("crab status "+crab_dir+"/"+crab_subdir)
     execme("crab status --verboseErrors "+crab_dir+"/"+crab_subdir)
-    #execme("crab resubmit "+crab_dir+"/"+crab_subdir)
+    ##execme("crab resubmit "+crab_dir+"/"+crab_subdir)
     #execme("crab kill -d "+crab_dir+"/"+crab_subdir)
 
 def statusMuData(muData, d):
-    crab_dir = "CrabMuData_20171119"
+    crab_dir = "CrabMuData_20171223"
     crab_subdir = "crab_"+getDataKey(muData, d)+"_MuData_"+crab_dir.split("_")[1]
     execme("echo +++++++++++++++++++++++++++++++++++++++++++++++")
     execme("echo NEXT SAMPLE : "+crab_subdir)
@@ -56,7 +56,7 @@ def statusMuData(muData, d):
     #execme("crab kill -d "+crab_dir+"/"+crab_subdir)
     #execme("crab status "+crab_dir+"/"+crab_subdir)
     execme("crab status --verboseErrors "+crab_dir+"/"+crab_subdir)
-    #execme("crab resubmit "+crab_dir+"/"+crab_subdir)
+    ##execme("crab resubmit "+crab_dir+"/"+crab_subdir)
     #execme("crab report "+crab_dir+"/"+crab_subdir)
     #execme("export PATH=$HOME/.local/bin:/afs/cern.ch/cms/lumi/brilconda-1.1.7/bin:$PATH")
     #execme("brilcalc lumi -i "+crab_dir+"/"+crab_subdir+"/results/lumisToProcess.json")

@@ -9,6 +9,14 @@ yext1_v2 = run +"_ext1-v2"
 M = "/MINIAODSIM"
 
 mcSampDict_ ={
+		"TestLHEGeneration_Mu_2000": "/TestLHEGeneration_Mu/sthakur-MCGenerationStep5_Mu2000_2018_1_27-652b8f7cd5d2b9159ac64422f0aacee9/USER",
+		"TestLHEGeneration_Mu_4000": "/TestLHEGeneration_Mu/sthakur-MCGenerationStep5_Mu4000_2018_1_27-652b8f7cd5d2b9159ac64422f0aacee9/USER",
+		"TestLHEGeneration_Mu_6000": "/TestLHEGeneration_Mu/sthakur-MCGenerationStep5_Mu6000_2018_1_27-652b8f7cd5d2b9159ac64422f0aacee9/USER"
+	}
+mcSampDict= OrderedDict(sorted(mcSampDict_.items(), key=lambda t: t[0]))
+
+'''
+mcSampDict_ ={
         "TTJetsP": "/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8/"+year+M,
         "WJetsToLNu": "/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/"+year+M,
         "W1JetsToLNu": "/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/"+year+M,
@@ -37,4 +45,4 @@ mcSampDict_ ={
         "ZZ": "/ZZ_TuneCUETP8M1_13TeV-pythia8/"+year+M
         }
 mcSampDict= OrderedDict(sorted(mcSampDict_.items(), key=lambda t: t[0]))
-
+'''

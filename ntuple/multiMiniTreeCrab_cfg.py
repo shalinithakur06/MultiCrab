@@ -37,6 +37,7 @@ from multiCrab import *
 for n in range(len(mc)):
     #print getMCKey(mc, n)
     #print getMCVal(mc, n)
+    #das = "das_client --limit=100 --query=\"file dataset=%s\"" %getMCVal(mc, n)
     das = "dasgoclient --limit=1 --query=\"file dataset=%s\"" %getMCVal(mc, n)
     #execme(das)
 
@@ -59,8 +60,8 @@ for n in range(len(eleData)):
 #------------------------------------------
 #muon channel
 isMu = True
-isMuMC = False
-isMuData = True
+isMuMC = True
+isMuData = False
 range_muMC = len(mc)
 range_muData = len(muData)
 
@@ -70,7 +71,6 @@ isEleMC = False
 isEleData = False
 range_EleMC = len(mc)
 range_EleData = len(eleData)
-
 #------------------------------------------
 #CRAB PARAMETERS
 #------------------------------------------
@@ -84,7 +84,9 @@ config.General.transferLogs = False
 config.JobType.allowUndistributedCMSSW = True
 config.JobType.pluginName = 'Analysis'
 #config.JobType.disableAutomaticOutputCollection = True
-config.Data.inputDBS = 'global'
+#config.Data.inputDBS = 'global'
+config.Data.allowNonValidInputDataset = True
+config.Data.inputDBS = 'phys03' #'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader'
 #config.Data.unitsPerJob = 10
 config.JobType.maxMemoryMB = 4000
 config.Data.ignoreLocality = True
@@ -110,7 +112,7 @@ if isMu:
             mu_MC = "MuMC_"+ date
             config.Data.splitting = 'FileBased'
             config.Data.unitsPerJob = 10
-            ##createMuMCpsetFile(mu_MC, "../../MiniTree/Selection/test/muonNtuple_cfg.py", mc, m)
+            createMuMCpsetFile(mu_MC, "../../MiniTree/Selection/test/muonNtuple_cfg.py", mc, m)
             config.General.requestName = getMCKey(mc, m) +"_"+mu_MC
             config.General.workArea = 'Crab' +mu_MC
             config.JobType.psetName = 'config/'+config.General.requestName+ "_cfg.py"
@@ -131,7 +133,7 @@ if isMu:
             #config.Data.unitsPerJob = 20
             config.Data.splitting = 'LumiBased'
             config.Data.allowNonValidInputDataset = True
-            ##createMuDatapsetFile(mu_Data, "../../MiniTree/Selection/test/muonNtuple_cfg.py", muData, d)
+            createMuDatapsetFile(mu_Data, "../../MiniTree/Selection/test/muonNtuple_cfg.py", muData, d)
             config.General.requestName = getDataKey(muData, d) +"_"+mu_Data
             config.General.workArea = 'Crab'+mu_Data
             config.JobType.psetName = 'config/'+config.General.requestName+ "_cfg.py"
@@ -168,7 +170,7 @@ if isEle:
             ele_MC = "EleMC_"+ date
             config.Data.splitting = 'FileBased'
             config.Data.unitsPerJob = 10
-            ##createEleMCpsetFile(ele_MC, "../../MiniTree/Selection/test/electronNtuple_cfg.py", mc, m)
+            createEleMCpsetFile(ele_MC, "../../MiniTree/Selection/test/electronNtuple_cfg.py", mc, m)
             config.General.requestName = getMCKey(mc, m) +"_"+ele_MC
             config.General.workArea = 'Crab' +ele_MC
             config.JobType.psetName = 'config/'+config.General.requestName+ "_cfg.py"
@@ -187,7 +189,7 @@ if isEle:
             config.Data.unitsPerJob = 500
             config.Data.splitting = 'LumiBased'
             config.Data.allowNonValidInputDataset = True
-            ##createEleDatapsetFile(ele_Data, "../../MiniTree/Selection/test/electronNtuple_cfg.py", eleData, d)
+            createEleDatapsetFile(ele_Data, "../../MiniTree/Selection/test/electronNtuple_cfg.py", eleData, d)
             config.General.requestName = getDataKey(eleData, d) + "_"+ele_Data
             config.General.workArea = 'Crab' +ele_Data
             config.JobType.psetName = 'config/'+config.General.requestName+ "_cfg.py"
