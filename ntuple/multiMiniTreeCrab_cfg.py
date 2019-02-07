@@ -62,7 +62,6 @@ for n in range(len(eleData)):
     #dataset_summary = getSummaryFromDAS(dataset_name)                                    
     #print '{:<30}  {:<30}'.format(dataset_key, dataset_summary)
 
-'''
 #------------------------------------------
 #USER INPUTS
 #------------------------------------------
@@ -75,7 +74,7 @@ range_muData = len(muData)
 
 #electron channel
 isEle = True
-isEleMC = True
+isEleMC = False
 isEleData = False
 range_EleMC = len(mc)
 range_EleData = len(eleData)
@@ -111,11 +110,11 @@ all_T2Paths = open("ntupleT2Paths_"+ date +".txt", 'w')
 #------------------------------------------
 #MUON CHANNEL
 #------------------------------------------
-muMC_T2Paths = ["MUON MC:"]
-muData_T2Paths = ["MUON DATA:"]
-muMC_dirT2 = "ntuple_for2016Data_MuMC_"+date
-muData_dirT2 = "ntuple_for2016Data_MuData_"+date
 if isMu:
+    muMC_T2Paths = ["MUON MC:"]
+    muData_T2Paths = ["MUON DATA:"]
+    muMC_dirT2 = "ntuple_for2016Data_MuMC_"+date
+    muData_dirT2 = "ntuple_for2016Data_MuData_"+date
     if isMuMC:
         #toPrint("MUONS, MC ","")
         for m in range(range_muMC):
@@ -161,19 +160,19 @@ if isMu:
             multiCrabSubmit(config, config.Data.outLFNDirBase)
             muData_T2Paths.append(getNtupleT2Paths(mu_Data, muData, d, muData_dirT2))
 
-muMC_T2Paths_.write(str(muMC_T2Paths)+",\n\n")
-all_T2Paths.write(str(muMC_T2Paths)+",\n\n")
-muData_T2Paths_.write(str(muData_T2Paths)+",\n\n")
-all_T2Paths.write(str(muData_T2Paths)+",\n\n")
+    muMC_T2Paths_.write(str(muMC_T2Paths)+",\n\n")
+    all_T2Paths.write(str(muMC_T2Paths)+",\n\n")
+    muData_T2Paths_.write(str(muData_T2Paths)+",\n\n")
+    all_T2Paths.write(str(muData_T2Paths)+",\n\n")
 
 #------------------------------------------
 #ELECTRON CHANNEL
 #------------------------------------------
-electrons_MC_t2_paths = ["ELECTRON MC:"]
-electrons_Data_t2_paths = ["ELECTRON DATA:"]
-eleMC_dirT2 = "ntuple_for2016Data_EleMC_"+date
-eleData_dirT2 = "ntuple_for2016Data_EleData_"+date
 if isEle:
+    electrons_MC_t2_paths = ["ELECTRON MC:"]
+    electrons_Data_t2_paths = ["ELECTRON DATA:"]
+    eleMC_dirT2 = "ntuple_for2016Data_EleMC_"+date
+    eleData_dirT2 = "ntuple_for2016Data_EleData_"+date
     if isEleMC:
         #toPrint("ELECTRONS, MC ","")
         for m in range(range_EleMC):
@@ -212,7 +211,6 @@ if isEle:
             multiCrabSubmit(config, config.Data.outLFNDirBase)
             electrons_Data_t2_paths.append(getNtupleT2Paths(ele_Data, eleData, d, eleData_dirT2))
 
-#ALL T2 PATHS
-all_T2Paths.write(str(electrons_MC_t2_paths)+",\n\n")
-all_T2Paths.write(str(electrons_Data_t2_paths))
-'''
+    #ALL T2 PATHS
+    all_T2Paths.write(str(electrons_MC_t2_paths)+",\n\n")
+    all_T2Paths.write(str(electrons_Data_t2_paths))

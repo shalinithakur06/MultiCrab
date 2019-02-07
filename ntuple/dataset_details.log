@@ -1,0 +1,78 @@
+DYJetsToLL_M50        [{"file_size":3609631059789,"nblocks":188,"nevents":122055388,"nfiles":1451,"nlumis":675360,"num_block":188,"num_event":122055388,"num_file":1451,"num_lumi":675360}]
+
+DYJetsToLL_Pt100To250  [{"file_size":76541440387,"nblocks":23,"nevents":2040596,"nfiles":53,"nlumis":25252,"num_block":23,"num_event":2040596,"num_file":53,"num_lumi":25252}]
+
+DYJetsToLL_Pt250To400  [{"file_size":18328226541,"nblocks":7,"nevents":423976,"nfiles":12,"nlumis":5720,"num_block":7,"num_event":423976,"num_file":12,"num_lumi":5720}]
+
+DYJetsToLL_Pt400To650  [{"file_size":19724812698,"nblocks":2,"nevents":432056,"nfiles":8,"nlumis":6366,"num_block":2,"num_event":432056,"num_file":8,"num_lumi":6366}]
+
+DYJetsToLL_Pt50To100  [{"file_size":731160588618,"nblocks":19,"nevents":21890432,"nfiles":232,"nlumis":110178,"num_block":19,"num_event":21890432,"num_file":232,"num_lumi":110178}]
+
+DYJetsToLL_Pt650ToInf  [{"file_size":20566258168,"nblocks":15,"nevents":430691,"nfiles":21,"nlumis":5289,"num_block":15,"num_event":430691,"num_file":21,"num_lumi":5289}]
+
+ExLepEEZ_M1000        [{"file_size":9398792483,"nblocks":37,"nevents":197600,"nfiles":38,"nlumis":1317,"num_block":37,"num_event":197600,"num_file":38,"num_lumi":1317}]
+
+ExLepEEZ_M1250        [{"file_size":9436213533,"nblocks":22,"nevents":200000,"nfiles":23,"nlumis":1000,"num_block":22,"num_event":200000,"num_file":23,"num_lumi":1000}]
+
+ExLepEEZ_M1500        [{"file_size":2071290078,"nblocks":17,"nevents":41900,"nfiles":17,"nlumis":279,"num_block":17,"num_event":41900,"num_file":17,"num_lumi":279}]
+
+ExLepEEZ_M1750        [{"file_size":9205881196,"nblocks":30,"nevents":192400,"nfiles":31,"nlumis":962,"num_block":30,"num_event":192400,"num_file":31,"num_lumi":962}]
+
+ExLepEEZ_M2000        [{"file_size":9015576385,"nblocks":22,"nevents":189000,"nfiles":22,"nlumis":1260,"num_block":22,"num_event":189000,"num_file":22,"num_lumi":1260}]
+
+ExLepEEZ_M250         [{"file_size":8178779053,"nblocks":25,"nevents":182100,"nfiles":25,"nlumis":1093,"num_block":25,"num_event":182100,"num_file":25,"num_lumi":1093}]
+
+ExLepEEZ_M2500        [{"file_size":9003890417,"nblocks":24,"nevents":187400,"nfiles":24,"nlumis":937,"num_block":24,"num_event":187400,"num_file":24,"num_lumi":937}]
+
+ExLepEEZ_M3000        [{"file_size":9396373897,"nblocks":36,"nevents":192800,"nfiles":38,"nlumis":964,"num_block":36,"num_event":192800,"num_file":38,"num_lumi":964}]
+
+ExLepEEZ_M3500        [{"file_size":8440625415,"nblocks":47,"nevents":170000,"nfiles":48,"nlumis":1700,"num_block":47,"num_event":170000,"num_file":48,"num_lumi":1700}]
+
+ExLepEEZ_M4000        [{"file_size":9825811876,"nblocks":39,"nevents":199800,"nfiles":40,"nlumis":999,"num_block":39,"num_event":199800,"num_file":40,"num_lumi":999}]
+
+ExLepEEZ_M4500        [{"file_size":9237609888,"nblocks":33,"nevents":187400,"nfiles":35,"nlumis":937,"num_block":33,"num_event":187400,"num_file":35,"num_lumi":937}]
+
+ExLepEEZ_M500         [{"file_size":9268596065,"nblocks":32,"nevents":200000,"nfiles":32,"nlumis":1000,"num_block":32,"num_event":200000,"num_file":32,"num_lumi":1000}]
+
+ExLepEEZ_M5000        [{"file_size":8357677729,"nblocks":48,"nevents":167000,"nfiles":48,"nlumis":1670,"num_block":48,"num_event":167000,"num_file":48,"num_lumi":1670}]
+
+ExLepEEZ_M750         [{"file_size":9096641705,"nblocks":35,"nevents":192800,"nfiles":35,"nlumis":1157,"num_block":35,"num_event":192800,"num_file":35,"num_lumi":1157}]
+
+ExLepMuMuZ_M1000      [{"file_size":8361407223,"nblocks":28,"nevents":191300,"nfiles":29,"nlumis":1148,"num_block":28,"num_event":191300,"num_file":29,"num_lumi":1148}]
+
+ExLepMuMuZ_M1250      [{"file_size":7884947040,"nblocks":16,"nevents":181400,"nfiles":16,"nlumis":907,"num_block":16,"num_event":181400,"num_file":16,"num_lumi":907}]
+
+ExLepMuMuZ_M1500      [{"file_size":8379745628,"nblocks":19,"nevents":190900,"nfiles":20,"nlumis":1091,"num_block":19,"num_event":190900,"num_file":20,"num_lumi":1091}]
+
+ExLepMuMuZ_M1750      [{"file_size":8496118104,"nblocks":24,"nevents":192200,"nfiles":25,"nlumis":961,"num_block":24,"num_event":192200,"num_file":25,"num_lumi":961}]
+
+ExLepMuMuZ_M2000      [{"file_size":8882884801,"nblocks":27,"nevents":200000,"nfiles":27,"nlumis":1200,"num_block":27,"num_event":200000,"num_file":27,"num_lumi":1200}]
+
+ExLepMuMuZ_M250       [{"file_size":8055065882,"nblocks":24,"nevents":198200,"nfiles":24,"nlumis":1101,"num_block":24,"num_event":198200,"num_file":24,"num_lumi":1101}]
+
+ExLepMuMuZ_M2500      [{"file_size":8859781780,"nblocks":15,"nevents":200000,"nfiles":16,"nlumis":1000,"num_block":15,"num_event":200000,"num_file":16,"num_lumi":1000}]
+
+ExLepMuMuZ_M3000      [{"file_size":9016587611,"nblocks":26,"nevents":200000,"nfiles":26,"nlumis":1333,"num_block":26,"num_event":200000,"num_file":26,"num_lumi":1333}]
+
+ExLepMuMuZ_M3500      [{"file_size":8959648226,"nblocks":15,"nevents":200000,"nfiles":15,"nlumis":1000,"num_block":15,"num_event":200000,"num_file":15,"num_lumi":1000}]
+
+ExLepMuMuZ_M4000      [{"file_size":8696812009,"nblocks":20,"nevents":192300,"nfiles":20,"nlumis":1154,"num_block":20,"num_event":192300,"num_file":20,"num_lumi":1154}]
+
+ExLepMuMuZ_M4500      [{"file_size":9212697854,"nblocks":36,"nevents":200000,"nfiles":38,"nlumis":1333,"num_block":36,"num_event":200000,"num_file":38,"num_lumi":1333}]
+
+ExLepMuMuZ_M500       [{"file_size":8358792599,"nblocks":12,"nevents":200000,"nfiles":13,"nlumis":1000,"num_block":12,"num_event":200000,"num_file":13,"num_lumi":1000}]
+
+ExLepMuMuZ_M5000      [{"file_size":8945925416,"nblocks":42,"nevents":192500,"nfiles":42,"nlumis":1283,"num_block":42,"num_event":192500,"num_file":42,"num_lumi":1283}]
+
+ExLepMuMuZ_M750       [{"file_size":8230982762,"nblocks":22,"nevents":191400,"nfiles":22,"nlumis":1095,"num_block":22,"num_event":191400,"num_file":22,"num_lumi":1095}]
+
+TT                    [{"file_size":3403800067777,"nblocks":54,"nevents":77081156,"nfiles":982,"nlumis":481156,"num_block":54,"num_event":77081156,"num_file":982,"num_lumi":481156}]
+
+WJetsToLNu            [{"file_size":812117052261,"nblocks":104,"nevents":29705748,"nfiles":422,"nlumis":149804,"num_block":104,"num_event":29705748,"num_file":422,"num_lumi":149804}]
+
+WW                    [{"file_size":30760233265,"nblocks":1,"nevents":994012,"nfiles":11,"nlumis":4981,"num_block":1,"num_event":994012,"num_file":11,"num_lumi":4981}]
+
+WZ                    [{"file_size":31315770494,"nblocks":18,"nevents":1000000,"nfiles":30,"nlumis":5209,"num_block":18,"num_event":1000000,"num_file":30,"num_lumi":5209}]
+
+ZZ                    [{"file_size":30900979887,"nblocks":2,"nevents":990064,"nfiles":12,"nlumis":5381,"num_block":2,"num_event":990064,"num_file":12,"num_lumi":5381}]
+
